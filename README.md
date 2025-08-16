@@ -132,7 +132,13 @@ Analyzes Slack channel messages and generates insights.
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Replit (Quick & Easy)
+1. Follow the [Replit Setup Guide](REPLIT_SETUP.md)
+2. Import from GitHub: `https://github.com/krishnapidaparty/employee-sentiment-analysis`
+3. Set environment variables in Replit Secrets
+4. Click "Run" to deploy instantly
+
+### Vercel (Recommended for Production)
 1. Connect your GitHub repository to Vercel
 2. Set environment variables in Vercel dashboard
 3. Deploy automatically on push to main branch
