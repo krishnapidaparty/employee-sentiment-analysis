@@ -1,0 +1,58 @@
+
+> employee-pulse@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Warning: Found multiple lockfiles. Selecting /Users/krishna/Documents/Buildathon/employee-engagement-pulse/package-lock.json.
+   Consider removing the lockfiles at:
+   * /Users/krishna/Documents/Buildathon/employee-engagement-pulse/employee-pulse/package-lock.json
+
+   ▲ Next.js 15.4.6 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://172.18.10.218:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 789ms
+ ○ Compiling /api/analyze ...
+ ✓ Compiled /api/analyze in 809ms
+Fetching messages from Slack channel...
+Found 1 user messages for analysis
+Performing sentiment analysis...
+Generating managerial insights...
+ POST /api/analyze 200 in 4452ms
+Fetching messages from Slack channel...
+Found 4 user messages for analysis
+Performing sentiment analysis...
+Failed to parse sentiment results: SyntaxError: Unexpected token '`', "```json
+[
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at POST (src/app/api/analyze/route.ts:91:30)
+  89 |     let sentimentResults;
+  90 |     try {
+> 91 |       sentimentResults = JSON.parse(sentimentContent);
+     |                              ^
+  92 |     } catch (error) {
+  93 |       console.error('Failed to parse sentiment results:', error);
+  94 |       return NextResponse.json(
+ POST /api/analyze 500 in 3215ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.4s
+ GET / 200 in 2586ms
+Fetching messages from Slack channel...
+Found 4 user messages for analysis
+Performing sentiment analysis...
+Failed to parse sentiment results: SyntaxError: Unexpected token '`', "```json
+[
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at POST (src/app/api/analyze/route.ts:91:30)
+  89 |     let sentimentResults;
+  90 |     try {
+> 91 |       sentimentResults = JSON.parse(sentimentContent);
+     |                              ^
+  92 |     } catch (error) {
+  93 |       console.error('Failed to parse sentiment results:', error);
+  94 |       return NextResponse.json(
+ POST /api/analyze 500 in 2321ms
+[?25h
